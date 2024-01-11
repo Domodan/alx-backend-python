@@ -33,3 +33,12 @@
 `9-element_length.py`
 > 9. Let's duck type an iterable object
 ---
+`100-safe_first_element.py`
+> 10. Duck typing - first element of a sequence
+---
+`101-safely_get_value.py`
+> 11. More involved type annotations
+---
+`102-type_checking.py`
+> 12. Type Checking
+---
