@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Module: Defines and annotates variables with initial values.
+Module: Defines and annotates variables with the specified values.
 
 The variables are:
     - a: an integer with the value 1
