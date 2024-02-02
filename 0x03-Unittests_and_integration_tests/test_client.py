@@ -40,9 +40,11 @@ class TestGithubOrgClient(unittest.TestCase):
         mocked_fxn.assert_called_once_with(
             "https://api.github.com/orgs/{}".format(org)
         )
-'''
+
     def test_public_repos_url(self) -> None:
-        """Tests the `_public_repos_url` property."""
+        """
+            Tests the `_public_repos_url` property
+        """
         with patch(
                 "client.GithubOrgClient.org",
                 new_callable=PropertyMock,
@@ -55,7 +57,7 @@ class TestGithubOrgClient(unittest.TestCase):
                 "https://api.github.com/users/google/repos",
             )
 
-    @patch("client.get_json")
+    '''@patch("client.get_json")
     def test_public_repos(self, mock_get_json: MagicMock) -> None:
         """Tests the `public_repos` method."""
         test_payload = {
