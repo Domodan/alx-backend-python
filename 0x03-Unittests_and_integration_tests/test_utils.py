@@ -72,7 +72,7 @@ class TestGetJson(unittest.TestCase):
             self.assertEqual(get_json(test_url), test_payload)
             req_get.assert_called_once_with(test_url)
 
-'''
+
 class TestMemoize(unittest.TestCase):
     """Tests the `memoize` function."""
     def test_memoize(self) -> None:
@@ -93,4 +93,3 @@ class TestMemoize(unittest.TestCase):
             self.assertEqual(test_class.a_property(), 42)
             self.assertEqual(test_class.a_property(), 42)
             memo_fxn.assert_called_once()
-            '''
